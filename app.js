@@ -78,7 +78,7 @@ app.get("/posts/:title", function (req, res) {
   // console.log(req.params);
 
   PostModel.findOne({title : req.params.title}, (err,postFound)=>{
-    console.log(postFound);
+    // console.log(postFound);
     res.render('post', {
       post : postFound
     });
