@@ -1,0 +1,24 @@
+<%- include('partials/header') -%>
+
+
+
+<h1>Home</h1>
+<p > <%= homeStartingContent %> </p>
+
+<% posts.forEach((post)=>{ %>
+    <h1> <%= post.title %> </h1> 
+    <p > <%= post.content.substring(0,100) %> <a href="/posts/<%=post.title%>">Read More</a> </p>
+<% }); %>
+
+<!-- <script>
+    arr = document.querySelectorAll(".truncate");
+    arr.forEach(ele => {
+        text = ele.innerText;
+        if(text.length > 100)
+        {
+            ele.innerText = text.substr(0,100)+"...";
+        }
+    });
+</script>     -->
+
+<%- include('partials/footer') -%>
