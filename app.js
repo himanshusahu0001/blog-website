@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 ////////////////////////////////////////////////////////////
-mongoose.connect("mongodb+srv://himanshu00738:p1o2i3u4@cluster0.k3ruhxq.mongodb.net/todolistDB");
+mongoose.connect("mongodb+srv://himanshu00738:p1o2i3u4@cluster0.k3ruhxq.mongodb.net/postDB");
 // mongoose.connect("mongodb://127.0.0.1:27017/postDB");
 
 const postSchema = {
